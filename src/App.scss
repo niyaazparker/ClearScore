@@ -1,0 +1,161 @@
+
+// Colours
+$Midnight: #263648;
+$Gallery: #F7F7F8;
+$CTA: #0F81A3;
+$CT_Ahover: #66AEC5;
+$Green_pill_text: #15693B;
+$Green_pill_background: #DDF9EA;
+$Orange_pill_text: #764C25;
+$Orange_pill_background: #FDEFE2;
+$Gray_pill_background: #EEEFF1;
+
+//Font sizes 
+$font_large:20px;
+$font_med:16px;
+$font_small:14px;
+$font_xsmall:12px;
+
+
+// spacing 
+$xlarge:24px;
+$large:16px;
+$medium:10px;
+$small:8px;
+$xsmall:4px;
+
+
+body {
+  background: $Gallery;
+}
+.container{
+  margin: 20px;
+}
+
+.header_prime {
+  margin-top: $xlarge;
+  margin-bottom: $xlarge;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: $font_large;
+}
+
+.pill {
+  border-radius: 4px;
+  text-transform: uppercase;
+  padding: 4px;
+  font-size:$font_xsmall;
+  font-weight: normal;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  
+}
+
+.card{
+  h2 {
+    font-size: $font_med;
+    color: rgba(38,54,72);
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    //width: 368px;
+  }
+  padding:24px;
+  background: #fff;
+  position: relative;
+  //flex: 1;
+  margin: 8px;
+  border-radius: 8px;
+  box-shadow: 0 0.5rem 0.75rem rgba(0,0,0,0.16);
+  font-size: $font_small;
+  line-height: 20px;
+  font-weight: normal;
+  color: #253648;
+
+.impactstatusmobile {
+  display: none;
+  background:$Gray_pill_background ;
+  color: $Midnight;
+  justify-content: center;
+}
+
+.status_parent {
+  display: flex;
+  width: 56%;
+  .trackstatus,.impactstatus {
+    flex: 1;
+  }
+  .trackstatus.offtrack {
+    background:$Orange_pill_background;
+    color: rgba(79,51,25);
+    margin-left: 0;
+    margin-right: 16px;
+  }
+  .trackstatus.ontrack {
+    background:$Green_pill_background ;
+    color: $Green_pill_text;
+    margin-left: 0;
+    margin-right: 16px;
+  }
+  .impactstatus {
+    background:$Gray_pill_background ;
+    color: $Midnight;
+  }
+}
+  
+}
+
+//x large
+@media (max-width:1280px){
+ 
+}
+
+//Large
+@media (max-width:1024px){
+  .card {
+   flex: 1 1 auto;
+  }
+}
+
+//Medium
+@media (max-width:768px){
+  .card {
+    flex: 1 1 25%;
+   
+    .impactstatus {display: none;}
+    .impactstatusmobile {
+      display: flex;
+    }
+   }
+  
+}
+
+//small
+@media (max-width:475px){
+  .header_prime {
+    margin-top: $xlarge;
+    margin-bottom: $small;
+  }
+  .card{
+    margin: 8px 0;
+    flex: 1 1 auto;
+   
+   
+    &:first-child {margin-top: 0;}
+  }
+}
+
+
+
+
+
+
