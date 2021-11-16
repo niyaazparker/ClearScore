@@ -1,6 +1,21 @@
 # Getting Started with Create React App
 
+
+## Issues found
+
+  - Body text color of cards specify "rgba(116,127,138)" which is not compliant with accessibility standards I have chosen #263648 (accessibility compliant) which is the closest to the one specified.
+  - Not really happy with mobile and tablet designs,stretched bodies and horizontal scrollbars not really favourable on mobile, its more prefered to have the cards stacked above each other or if really needs be add the cards to gallery style flip.
+  - overall the brief lacked a bit of details but also provided myself the room to use my own expereince and knowledge. In a real life situation it would need to be specked bit more detailed.
+  - The logic I found bit confusing reading and felt could perhaps be worded bit better.
+
+## Final Thoughts
+
+Overall I thoroughly enjoyed the assesment as it allowed me to work within react enviroment.
+
+## React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
